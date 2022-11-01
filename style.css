@@ -51,11 +51,25 @@ body {
   opacity: 0;
 }
 
+.panel p {
+  font-size: 20;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
 .panel.active {
   flex: 5;
 }
 
 .panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel.active p {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
